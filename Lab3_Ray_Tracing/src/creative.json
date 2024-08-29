@@ -1,0 +1,97 @@
+{
+  "camera": {
+    "type": "perspective",
+    "focal_length": 0.5,
+    "eye": [0,0,0],
+    "up": [0,1,0],
+    "look": [0.365148,-0.182574, 0.91287],
+    "height": 1,
+    "width": 1.7777777778
+  },
+  "materials": [
+    {
+      "name": "red plastic",
+      "ka": [0.894118,0.101961,0.109804],
+      "kd": [0.894118,0.101961,0.109804],
+      "ks": [0.894118,0.101961,0.109804],
+      "km": [0.0894118,0.0101961,0.0109804],
+      "phong_exponent": 20
+    },
+    {
+      "name": "blue plastic",
+      "ka": [0.215686,0.494118,0.721569],
+      "kd": [0.215686,0.494118,0.721569],
+      "ks": [0.215686,0.494118,0.721569],
+      "km": [0.0215686,0.0494118,0.0721569],
+      "phong_exponent": 20
+    },
+    {
+      "name": "green plastic",
+      "ka": [0.301961,0.686275,0.290196],
+      "kd": [0.301961,0.686275,0.290196],
+      "ks": [0.301961,0.686275,0.290196],
+      "km": [0.0301961,0.0686275,0.0290196],
+      "phong_exponent": 20
+    },
+    {
+      "name": "purple metal",
+      "ka": [0.596078,0.305882,0.639216],
+      "kd": [0.596078,0.305882,0.639216],
+      "ks": [0.596078,0.305882,0.639216],
+      "km": [0.0596078,0.0305882,0.0639216],
+      "phong_exponent": 200
+    },
+    {
+      "name": "Lambertian blue",
+      "ka": [0.2, 0.3, 0.8],
+      "kd": [0.2, 0.3, 0.8],
+      "ks": [0.1,0.1,0.1],
+      "km": [0.3,0.3,0.3],
+      "phong_exponent": 20
+    },
+    {
+      "name": "gray mirror",
+      "ka": [0.1,0.1,0.1],
+      "kd": [0.1,0.1,0.1],
+      "ks": [0.1,0.1,0.1],
+      "km": [0.999,0.999,0.999],
+      "phong_exponent": 2000
+    }
+  ],
+  "lights":[
+    {
+      "type": "point",
+      "position": [0,0,0],
+      "color": [0.5,0.5,0.5]
+    }
+  ],
+
+  "objects": [
+    {
+      "material": "gray mirror",
+      "type": "soup",
+      "stl": "Cube.stl"
+    },
+    {
+      "material": "red plastic",
+      "type": "soup",
+      "stl": "edge1.stl"
+    },
+    {
+      "material": "blue plastic",
+      "type": "soup",
+      "stl": "edge2.stl"
+    },
+    {
+      "material": "green plastic",
+      "type": "soup",
+      "stl": "edge3.stl"
+    },
+    {
+      "type": "sphere",
+      "material": "Lambertian blue",
+      "center": [0,-6,0],
+      "radius": 3
+    }
+  ]
+}
